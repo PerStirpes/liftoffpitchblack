@@ -5,7 +5,7 @@ import GoogleMaps from "./Googlemaps"
 import Button from "./button"
 import Docker from "./Docker"
 
-const Maps = props => {
+const Maps = ({ flags: { launchdarklymaps } }) => {
   return (
     <div>
       <div>
@@ -31,16 +31,16 @@ const Maps = props => {
             <Docker />
           </ul>
         </ul>
+        {launchdarklymaps ? (
+          <div>
+            <GoogleMaps />
+          </div>
+        ) : (
+          <div>
+            <Mapbox />
+          </div>
+        )}
       </div>
-      {props.flags.launchdarklymaps ? (
-        <div>
-          <GoogleMaps />
-        </div>
-      ) : (
-        <div>
-          <Mapbox />
-        </div>
-      )}
     </div>
   )
 }
