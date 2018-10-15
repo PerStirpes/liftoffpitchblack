@@ -4,5 +4,5 @@
 
 * No need to git clone, npm install, 
 
-* The App is Hosted Here => [launchdarkly.now.sh](launchdarkly.now.sh)
+* The App is Hosted Here => [launchdarkly.now.sh](https://launchdarkly.now.sh)
 * [view source here](launchdarkly.now.sh/_src)
