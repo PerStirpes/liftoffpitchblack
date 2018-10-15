@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "evergreen-ui": "^4.0.0-44",
     "google-map-react": "^1.0.9",
     "ld-react": "^1.2.0",
     "ldclient-js": "^2.7.1",

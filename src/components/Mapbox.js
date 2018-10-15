@@ -19,7 +19,7 @@ export default class Mapbox extends Component {
     return (
       <MapGL
         {...this.props.viewport}
-        scrollZoom={true}
+        scrollZoom={false}
         dragRotate={true}
         mapboxApiAccessToken={API_KEY.MAP_BOX}
       >

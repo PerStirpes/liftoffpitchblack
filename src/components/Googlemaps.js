@@ -43,5 +43,5 @@ const styles = {
     borderRadius: "100%",
     transform: "translate(-50%, -50%)",
   },
-  map: { height: "100vh", width: "100%" },
+  map: { height: "860px", width: "940px" },
 }

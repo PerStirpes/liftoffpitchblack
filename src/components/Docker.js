@@ -4,13 +4,20 @@ import "../App.css"
 export default () => {
   return (
     <div>
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        Deployed with Docker
         <svg
           id="logoHorizontal"
           viewBox="-5.724 -43.601 2000 600"
           width="100%"
           height="100%"
-          class="logo"
+          className="logo"
         >
           <path
             d="M934.957,149.221c-10.479-0.345-19.253,7.869-19.599,18.348c-0.014,0.417-0.014,0.834,0,1.251v94.24
