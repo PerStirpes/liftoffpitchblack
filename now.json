@@ -1,5 +1,6 @@
 {
   "type": "static",
+  "public": true,
   "static": {
     "rewrites": [
       {

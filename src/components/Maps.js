@@ -10,8 +10,11 @@ const Maps = ({ flags: { launchdarklymaps } }) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        flexDirection: "column",
       }}
     >
+      The feature flag set will switch between a Mapbox(grey tint) or Google
+      map(standard color pattern)
       {launchdarklymaps ? <Mapbox /> : <GoogleMaps />}
     </div>
   )

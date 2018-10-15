@@ -10,7 +10,7 @@ export default () => (
           target="_blank"
           rel="noopener noreferrer"
           className="Footer-social overflow-hidden"
-          href="https://github.com/PerStirpes"
+          href="https://github.com/PerStirpes/liftoffpitchblack"
           title="Follow Me on Github"
         >
           <svg

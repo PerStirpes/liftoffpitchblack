@@ -13,18 +13,13 @@ const App = () => (
     <Header />
     <main>
       <div>
-        The feature flag set will switch between a Mapbox or Google map
         <ul>
           <ul>
-            <ul>
-              <br />
-              <Button />
-            </ul>
-            <br />
+            <Button />
           </ul>
-          <ul>
-            <Docker />
-          </ul>
+        </ul>
+        <ul>
+          <Docker />
         </ul>
       </div>
       <Maps />
