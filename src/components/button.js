@@ -2,8 +2,6 @@ import React, { Component } from "react"
 import { div } from "gl-matrix/src/gl-matrix/vec2"
 
 export default class Button extends Component {
-  componentDidMount() {}
-
   _handleClick = e => {
     e.preventDefault()
     window.analytics.track("click_swap_map_button", {
