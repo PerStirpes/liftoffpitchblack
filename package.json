@@ -1,6 +1,6 @@
 {
   "name": "launchdarklymaps",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "evergreen-ui": "^4.0.0-44",
@@ -10,10 +10,11 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-map-gl": "^3.3.5",
-    "react-scripts": "2.0.4"
+    "react-scripts": "^2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
+    "now-build": "react-scripts build && mv build dist",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
