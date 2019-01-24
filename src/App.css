@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.header-bg.is-clipped {
+  clip-path: polygon(0 0, 0 100%, 100% 60%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 60%, 100% 0);
+}
+.is-clipped {
+  min-height: 40rem;
+}
+.stars-bg {
+  background: #181f2f;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -72,7 +82,7 @@
     color: $white-40;
   }
   .list-header:not(.active):not(.expanded):before {
-    content: "+";
+    content: '+';
     font-weight: 700;
     color: $white-40;
     position: absolute;
@@ -155,9 +165,9 @@
       height: 20px;
       line-height: 1.833;
     }
-    input[type="checkbox"],
-    input[type="radio"],
-    input[type="color"] {
+    input[type='checkbox'],
+    input[type='radio'],
+    input[type='color'] {
       width: 20%;
     }
     input {
@@ -166,7 +176,7 @@
       &:disabled {
         background: $white;
       }
-      &[type="checkbox"] {
+      &[type='checkbox'] {
         height: auto;
       }
     }
@@ -202,7 +212,7 @@
   }
 }
 code {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace !important;
 }
 .demo {
   position: relative;
@@ -296,8 +306,8 @@ footer {
       right: 12px;
       color: $white-40;
       font-size: 24px;
-      font-family: "deckgl";
-      content: "\e906";
+      font-family: 'deckgl';
+      content: '\e906';
     }
     h3 {
       display: block;

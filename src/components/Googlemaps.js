@@ -1,17 +1,17 @@
-import React, { Component } from "react"
-import GoogleMapReact from "google-map-react"
-import API_KEY from "../config.json"
+import React, { Component } from 'react';
+import GoogleMapReact from 'google-map-react';
+import API_KEY from '../config.json';
 
-const LaunchDarklyHome = ({ text }) => <div style={styles.text}>{text}</div>
+const LaunchDarklyHome = ({ text }) => <div style={styles.text}>{text}</div>;
 
 export default class GoogleMap extends Component {
   static defaultProps = {
     center: {
       lat: 37.80614,
-      lng: -122.27141,
+      lng: -122.27141
     },
-    zoom: 17,
-  }
+    zoom: 17
+  };
 
   render() {
     return (
@@ -24,24 +24,24 @@ export default class GoogleMap extends Component {
           <LaunchDarklyHome
             lat={37.80614}
             lng={-122.27141}
-            text={"Launch Darkly 🚀"}
+            text={'LaunchDarkly 🚀'}
           />
         </GoogleMapReact>
       </div>
-    )
+    );
   }
 }
 
 const styles = {
   text: {
-    color: "black",
-    padding: "15px 10px",
-    display: "inline-flex",
-    textAlign: "center",
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: "100%",
-    transform: "translate(-50%, -50%)",
+    color: 'black',
+    padding: '15px 10px',
+    display: 'inline-flex',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '100%',
+    transform: 'translate(-50%, -50%)'
   },
-  map: { height: "860px", width: "940px" },
-}
+  map: { height: '860px', width: '940px' }
+};

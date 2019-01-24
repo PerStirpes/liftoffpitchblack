@@ -1,33 +1,35 @@
-import React, { Component } from "react"
-import { div } from "gl-matrix/src/gl-matrix/vec2"
+import React, { Component } from 'react';
+import { div } from 'gl-matrix/src/gl-matrix/vec2';
 
 export default class Button extends Component {
   _handleClick = e => {
-    e.preventDefault()
-    window.analytics.track("click_swap_map_button", {
-      title: "Map Swap",
-    })
-    window.location.reload()
-  }
+    e.preventDefault();
+    window.analytics.track('click_swap_map_button', {
+      title: 'Map Swap'
+    });
+    window.location.reload();
+  };
 
   render() {
     return (
       <div
         style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column'
         }}
       >
-        <div>Percentage rollout 50%</div>
-        <br />
+        <h2>API Swap</h2>
+
         <div>
-          <button onClick={this._handleClick}>
-            Click to refresh - Do you see a different map 🗺?
-          </button>
+          <div>
+            <button onClick={this._handleClick} style={{ fontWeight: 900 }}>
+              Tap
+            </button>
+          </div>
         </div>
       </div>
-    )
+    );
   }
 }
