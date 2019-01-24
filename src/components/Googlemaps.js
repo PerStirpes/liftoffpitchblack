@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import GoogleMapReact from 'google-map-react';
-import API_KEY from '../config.json';
+import React, { Component } from 'react'
+import GoogleMapReact from 'google-map-react'
+import API_KEY from '../config.json'
 
-const LaunchDarklyHome = ({ text }) => <div style={styles.text}>{text}</div>;
+const LaunchDarklyHome = ({ text }) => <div style={styles.text}>{text}</div>
 
 export default class GoogleMap extends Component {
   static defaultProps = {
@@ -11,7 +11,7 @@ export default class GoogleMap extends Component {
       lng: -122.27141
     },
     zoom: 17
-  };
+  }
 
   render() {
     return (
@@ -28,7 +28,7 @@ export default class GoogleMap extends Component {
           />
         </GoogleMapReact>
       </div>
-    );
+    )
   }
 }
 
@@ -44,4 +44,4 @@ const styles = {
     transform: 'translate(-50%, -50%)'
   },
   map: { height: '860px', width: '940px' }
-};
+}

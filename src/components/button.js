@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import { div } from 'gl-matrix/src/gl-matrix/vec2';
+import React, { Component } from 'react'
+import { div } from 'gl-matrix/src/gl-matrix/vec2'
 
 export default class Button extends Component {
   _handleClick = e => {
-    e.preventDefault();
+    e.preventDefault()
     window.analytics.track('click_swap_map_button', {
       title: 'Map Swap'
-    });
-    window.location.reload();
-  };
+    })
+    window.location.reload()
+  }
 
   render() {
     return (
@@ -30,6 +30,6 @@ export default class Button extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import MapGL, { Marker } from 'react-map-gl';
-import API_KEY from '../config.json';
+import React, { Component } from 'react'
+import MapGL, { Marker } from 'react-map-gl'
+import API_KEY from '../config.json'
 
 export default class Mapbox extends Component {
   static defaultProps = {
@@ -13,7 +13,7 @@ export default class Mapbox extends Component {
       width: 940,
       height: 860
     }
-  };
+  }
 
   render() {
     return (
@@ -32,6 +32,6 @@ export default class Mapbox extends Component {
           <div>{'LaunchDarkly 🚀'}</div>
         </Marker>
       </MapGL>
-    );
+    )
   }
 }

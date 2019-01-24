@@ -1,6 +1,6 @@
-import React from 'react';
-import Cipher from './Cipher';
-import '../App.css';
+import React from 'react'
+import Cipher from './Cipher'
+import '../App.css'
 
 export default () => (
   <footer>
@@ -10,4 +10,4 @@ export default () => (
       </div>
     </div>
   </footer>
-);
+)
